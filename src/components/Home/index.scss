@@ -1,0 +1,87 @@
+.home-page {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px); 
+    padding: 20px;
+    box-sizing: border-box; 
+
+    .text-zone {
+        position: relative; /* Change to relative */
+        width: 100%; /* Adjust the width as needed */
+        height: 100%; /* Adjust the height as needed */
+        display: flex; /* Use flexbox to center content vertically and horizontally */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        flex-direction: column; /* Align content in a column */
+    }
+
+    h1 {
+        color: aliceblue;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        position: relative; /* Change to relative */
+        text-align: center; /* Center align text */
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            top: -40px;
+            left: 15px;
+            opacity: 0.5;
+        }
+        &::after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            bottom: -40px; /* Adjust the bottom position as needed */
+            left: 15px;
+            opacity: 0.5;
+        }
+        img {
+            width: 32px;
+            margin-left: 20px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+    }
+
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: serif;
+        letter-spacing: 3px;
+        text-align: center; /* Center align text */
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button {
+        color: #ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd700;
+        margin-top: 25px;
+        display: inline-block; /* Change to inline-block */
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+        &:hover {
+            background: #ffd700;
+            color: #323030;
+        }
+    }
+}
