@@ -33,7 +33,7 @@ const Home = () => {
                     <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22} />
                 </h1>
                 <h2>Mern Stack Developer</h2>
-                <Link to="/contact" className="flat-button">Contact Me</Link>
+                <Link to="../My-Protofolio/contact" className="flat-button">Contact Me</Link>
             </div>
         </div>
          <Loader type="pacman" />

@@ -17,7 +17,7 @@ const About =  ()=>{
     return (
         <>
         <div className='container about-page'>
-            <div className='text-zone'>
+            <div className='text-zone  ' id='about-text' >
                 <h1>
                     <AnimatedLetters letterClass={letterClass}
                     strArray={['A','b','o','u','t' ,' ', 'm','e']}
@@ -34,6 +34,18 @@ const About =  ()=>{
                <p>
                With a strong background in front-end development and a keen interest in mastering the MERN stack, I am a dedicated and enthusiastic professional seeking opportunities to leverage my skills in creating innovative and user-centric web applications.
                </p>
+
+               <span id='link'>Check out my 
+               <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/tajinder-singh-064086264/'>
+                         linkedin
+                    </a>
+                    And
+                    <a target='_blank' rel='noreferrer' href='https://github.com/Taj190'>
+                        Github
+                    </a>
+               </span>
+              
+
             </div>
             
             <div className='stage-cube-cont'>

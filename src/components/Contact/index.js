@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='container contact-page'>
+      <div className='container contact-page ' id='contact-conatiner'>
         <div className='text-zone'>
           <h1>
             <AnimatedLetters letterClass={letterClass} strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']} idx={15} />

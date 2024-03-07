@@ -93,20 +93,29 @@
           }
       }
 
-      .text-zone {
+      @media (max-width: 768px) {
+        #about-text{
+          left: 3%;
+          top: 60%; 
+          width: 92%; 
+        }
+      }
+      
+      .text-zone  {
           position: absolute;
           left: 10%;
-          top: 50%;
+          top: 40%;
           transform: translateY(-50%);
           width: 35%;
           vertical-align: middle;
           display: table-cell;
-          max-height: 90%;
+          max-height: 100%;
           @media (max-width: 768px) {
               left: 5%;
-              top: 60%; 
+              top: 56%; 
               width: 90%; 
-
+              height:90vh ;
+             
               p{
                 margin-top: 12px;
                 font-size: 14px;
