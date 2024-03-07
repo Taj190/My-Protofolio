@@ -13,15 +13,15 @@ const Sidebar = () => {
                 <p className='sub-logo'>TAJINDER</p>
             </Link>
             <nav>
-                <NavLink exact activeClassName="active" to="/">
+                <NavLink exact activeClassName="active" to="My-Protofolio/home">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
 
-                <NavLink exact activeClassName="active" className='about-link' to="/about">
+                <NavLink exact activeClassName="active" className='about-link' to="My-Protofolio/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
 
-                <NavLink exact activeClassName="active" className="contact-link" to='/contact'>
+                <NavLink exact activeClassName="active" className="contact-link" to='My-Protofolio/contact'>
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                   
                 </NavLink>
